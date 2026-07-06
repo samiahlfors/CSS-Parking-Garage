@@ -1,0 +1,45 @@
+.wrapper.grid {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: repeat(3, 120px);
+}
+
+.roadway {
+    grid-column: 2;
+    grid-row: 1 / span 3;
+    background-color: #1a1919;
+    color: #f7f3f3;
+    border-left: 2px dashed #ebe9e1;
+    border-right: 2px dashed #ebe9e1;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 700;
+}
+
+.spot-1 {
+    grid-column: 1;
+    grid-row: 1;
+}
+
+.spot-2 {
+    grid-column: 3;
+    grid-row: 1;
+}
+
+.spot-3 {
+    grid-column: 1;
+    grid-row: 2;
+}
+
+.spot-4 {
+    grid-column: 1;
+    grid-row: 3;
+}
+
+.vip-limo {
+    grid-column: 3;
+    grid-row: 2 / span 2;
+    border: 2px solid #dcdcdc;
+}
